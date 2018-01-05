@@ -138,18 +138,23 @@
 		&__btn{
 			border: 2px solid #ffffff;
 			padding: 15px 58px;
+			font-family: 'Lato', sans-serif;
+			font-weight: 700;
+			font-size: 13px;
 			background-color: rgba( 0, 0, 0, 0);
 			color: @c-white;
+			text-decoration: none;
 			text-transform: uppercase;
 			transition-timing-function: cubic-bezier(0,0,0.58,1);
    	 		transition-duration: 500ms;
+   	 		cursor: pointer;
 		}
 
 		&__btn:hover{
 			background-color: rgba( 0, 0, 0, 0.5);
 			border: 2px solid @c-yellow;
 			color: @c-yellow;
-			cursor: pointer;
+			
 		}
 }
 
@@ -168,7 +173,7 @@
 		&__logo img{
 			z-index: 20;
 		}
-		
+
 		&__nav{
 			position: relative;
 		}

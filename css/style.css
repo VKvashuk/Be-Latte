@@ -139,17 +139,21 @@ body {
 .page-header__btn {
   border: 2px solid #ffffff;
   padding: 15px 58px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
   background-color: rgba(0, 0, 0, 0);
   color: #ffffff;
+  text-decoration: none;
   text-transform: uppercase;
   transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
   transition-duration: 500ms;
+  cursor: pointer;
 }
 .page-header__btn:hover {
   background-color: rgba(0, 0, 0, 0.5);
   border: 2px solid #f5d76e;
   color: #f5d76e;
-  cursor: pointer;
 }
 @media (max-width: 1024px) {
   .page-header__content {
@@ -301,10 +305,15 @@ body {
 }
 .menu__btn {
   border: 2px solid #000000;
-  padding: 15px 58px;
+  padding: 15px 0px;
+  color: #000000;
   background-color: rgba(0, 0, 0, 0);
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
   text-transform: uppercase;
   text-align: center;
+  text-decoration: none;
   width: 230px;
   -webkit-align-self: center;
       -ms-flex-item-align: center;
