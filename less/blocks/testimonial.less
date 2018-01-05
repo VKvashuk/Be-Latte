@@ -1,0 +1,148 @@
+.slick-dots li button:before{
+	color: #fff;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 0;
+    margin: 0;
+    content: "";
+    background: #fff;
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button:before{
+		border: 2px solid @c-white;
+		background-color: @c-gray;
+}
+
+.slider{
+	&__title{
+		text-align: center;
+		font-size: 32px;
+		line-height: 24px;
+		text-transform: uppercase;
+		margin-bottom: 50px;
+	}
+
+	&__wrapper{
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 40px;
+		min-height: 425px;
+	}
+	
+	&__img {
+		width: 75%;
+		background-color: @c-gray;
+		background-image: url("../img/sliger_bg.jpg");
+		background-size: cover;
+		background-position: center;
+	}
+
+	&__testimonial{
+		width: 458px;
+		background-color: @c-gray;
+		position: relative;
+	}
+
+	&__item{
+		width: 458px;
+	}
+
+	&__number{
+		position: absolute;
+		font-size: 90px;
+		color: #3f3736;
+		top: -60px;
+		left: 30px;
+	}
+
+	&__photo{
+		margin-top: 96px;
+		background-color: @c-gray;
+	}
+
+	&__photo img{
+		margin: 0 auto;
+	}
+
+	&__name{
+		color: @c-yellow;
+		font-size: 20px;
+		text-align: center;
+	}
+
+	&__text{
+		width: 60%;
+		text-align: center;
+		color: @c-white;
+		font-family: 'Lato', sans-serif;
+		font-weight: 400;
+		margin: 0 auto;
+	}
+
+	&__btn{
+		margin-bottom: 60px;
+	}
+
+	&__quotes{
+		color: "";
+		position: absolute;
+		background-image: url("../img/quotation_mark.png"); 
+		width: 77px;
+    	height: 57px;
+    	background-repeat: no-repeat;
+    	bottom: 10px;
+    	right: 20px;
+	}
+	
+}
+
+@media @tablet-widths{
+	.slider{
+
+		&__wrapper{
+			display: flex;
+			flex-direction: row;
+			margin-bottom: 40px;
+			min-height: 425px;
+			flax: 1 1 300px;
+		}
+		
+		&__img {
+			background-position: 72%;
+		}
+
+		&__testimonial{
+			width: 60%;
+			max-width: 458px;
+		}
+
+		&__item{
+		width: 300px;
+	}
+	}
+}
+
+@media @mobile-widths{
+	.slider{
+		&__wrapper{
+			display: flex;
+			flex-direction: column;
+	}
+
+	&__img {
+			width: 100%;
+			height: 300px;
+	} 
+
+	&__testimonial{
+			flex-direction: row;
+			width: 100%;
+			max-width: 667px;
+			
+	}
+	}
+}
+

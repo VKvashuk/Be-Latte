@@ -1,0 +1,80 @@
+.menu{
+	display: flex;
+	flex-direction: column;
+	
+	&__title{
+		text-align: center;
+		
+		font-size: 32px;
+		line-height: 24px;
+		text-transform: uppercase;
+	}
+
+	&__wrapper{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	&__item{
+		width: 396px;
+		margin-right: 0.5%;
+		margin-left: 0.5%;
+	}
+
+	&__item p{
+		text-align: center;
+		padding-top: 130px;
+		font-size: 40px;
+		line-height: 24px;
+		text-transform: uppercase;
+	}
+
+	&__coffee{
+		background-image: url("../img/cup_of_coffee.jpg");
+		min-height: 294px;
+	}
+
+	&__tea{
+		background-image: url("../img/cup_of_tea.jpg");
+		min-height: 294px;
+	}
+
+	&__dessert{
+		background-image: url("../img/Hover_state.jpg");
+		min-height: 294px;
+	}
+
+	&__table{
+		padding-left: 75px;
+		width: 320px;
+		font-size: 16px;
+		line-height: 24px;
+		font-family: 'Lato', sans-serif;
+		font-weight: 700;
+	}
+	&__table tr td:last-child{
+		font-weight: 400;
+	}
+
+	&__btn{
+		border: 2px solid #000000;
+		padding: 15px 58px;
+		background-color: rgba( 0, 0, 0, 0);
+		text-transform: uppercase;
+		text-align: center;
+		width: 230px;
+		align-self:center;
+		margin-top: 60px;
+		margin-bottom: -20px;
+		cursor: pointer;
+		transition-timing-function: cubic-bezier(0,0,0.58,1);
+ 		transition-duration: 500ms;
+	}
+
+	&__btn:hover{
+		background-color: rgba( 0, 0, 0, 0.6);
+		border: 2px solid @c-yellow;
+		color: @c-yellow;
+	}
+}
