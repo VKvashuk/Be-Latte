@@ -507,10 +507,7 @@ body {
       -ms-flex: 1 1 200px;
           flex: 1 1 200px;
 }
-.location__map iframe {
-  height: 100%;
-  min-height: 470px;
-}
+
 @media (max-width: 1024px) {
   .location__info {
     -webkit-flex: 1 1 270px;
