@@ -50,7 +50,8 @@ body {
   transition: background-color 0.2s linear;
   display: none;
 }
-.page-header__nav-toggle.page-header__nav-toggle--opened {
+
+.page-header__nav-toggle--opened {
   position: fixed;
 }
 .page-header__nav-toggle--closed {
